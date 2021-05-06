@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Masashi Kobayashi">
+	<meta name="copyright" content="Copyright Masashi Kobayashi 2021">
+	<meta name="google-site-verification" content="cQSliJDuQ3qRlZyVLmjurqMe4x-Q_SxyvXtpQbWRbeY">
+	<title>My 4 years at TD - Masashi Kobayashi</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700|Fira+Sans:400,400i,700,700i,800"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/static/stylesheets/main.css">
+	<link rel="alternate" href="/static/feed.rss" type="application/rss+xml">
+	<link rel="canonical" href="https://masashik.com/blog/my-4-years-at-td" />
+</head>
+
+<body>
+	<header>
+		<nav class="wrapper clearfix">
+			<div class="breadcrumbs">
+				<a href="/">Masashi Kobayashi</a>
+			</div>
+			<div class="pages">
+				<a href="/blog/">Blog</a>
+				<a href="/#book">Book</a>
+				<!-- <a href="/#projects">Projects</a> -->
+				<a href="/#contact">Contact</a>
+				<a href="/static/feed.rss">RSS</a>
+			</div>
+		</nav>
+	</header>
+	<main class="wrapper clearfix">
+
+		<article>
+			<h1>My 4 years at TD</h1>
+			<div class="metadata">
+				<span class="dates">
+					Last updated: 5th May 2021
+				</span>
+				<span class="tags">
+					Filed under: <a href="/blog/category/career" rel="tag">career</a>
+				</span>
+			</div>
+
+			<h2>Introduction</h2>
+			<p>This blog post is the summary of my 4 years career at TD and a short introduction of the banking industry,
+				fintech, and their relations.</p>
+
+			<h2>Abstract</h2>
+			<p>I never imagined working in a bank as an software engineer since I graduated from school. FinTech companies are
+				trending in 2016 (Ex. Square, Stripe, Plaid, MoneyTree, LendingClub, WealthSimple, and etc...) and I wanted
+				to join the financial industry to understand what is happening with IT technologies. Job landing on a bank is a
+				new experience for me, and my first year is full of trainings and some PoC projects and providing mentorship to
+				my co-op students. My second year is a series of hackathon events. Third year is a special year since I got a
+				chance to visit some of Silicon Valley companies and, the COVID-19 pandemic started. My last year is full of
+				COVID-19 related issues and remote working.
+			</p>
+
+			<ol class="toc">
+				<li><strong><a href="#landing-on-the-job">Landing on the job</a></strong></li>
+				<ul>
+					<li><a href="#call-from-td-recruiter">Call from TD recruiter</a></li>
+					<li><a href="#interviews">Interviews</a></li>
+					<li><a href="#offer">Offer</a></li>
+				</ul>
+				<li><strong><a href="#onboarding">Onboarding to the team</a></strong></li>
+				<ul>
+					<li><a href="#call-from-td-recruiter">On the job training</a></li>
+					<li><a href="#interviews">Getting to know other colleagues</a></li>
+				</ul>
+				<li><strong><a href="#first">First Year</a></strong></li>
+				<ul>
+					<li><a href="#move">Moving between offices - 100 Wellington West and 320 Front Street</a></li>
+					<li><a href="#circuit">Fault-tolerant API PoC - Netflix Circuit Breaker Library</a></li>
+					<li><a href="#unitedway">United Way Pay PoC</a></li>
+					<li><a href="#coop">Co-op students - Jay and Shah</a></li>
+				</ul>
+				<li><strong><a href="#second">Second Year</a></strong></li>
+				<ul>
+					<li><a href="#second-coop">Co-op student - Megha, Blad and Kate</a></li>
+					<li><a href="#hackathon-td">Hackathon - TD internal corporate hackathon</a></li>
+					<li><a href="#hackathon-north">Hackathon - Hack The North</a></li>
+					<li><a href="#hackathon-eleven">Hackathon - Eleven</a></li>
+					<li><a href="#pivotal">Working in Pivotal (Acquired by VMWare) Toronto office</a></li>
+					<li><a href="#vim">Vim Toronto meetup</a></li>
+				</ul>
+				<li><strong><a href="#third">Third Year</a></strong></li>
+				<ul>
+					<li><a href="#">Another patent filed for TD Insurance business solution</a></li>
+					<li><a href="#">Focus on API architecture consulting work</a></li>
+					<li><a href="#api-client-onboarding">API Client Onboarding</a></li>
+					<li><a href="#api-client-onboarding-process-improve">Process improvement for the API Client Onboarding</a>
+					</li>
+					<li><a href="#">More training on authentication and authorization</a></li>
+					<li><a href="#">OAuth2.0</a></li>
+					<li><a href="#">Client Credentials</a></li>
+					<li><a href="#">Authorization Code</a></li>
+					<li><a href="#">Google Cloud Event in 2019</a></li>
+					<li><a href="#">Google Cloud Hackathon at Montreal in 2019</a></li>
+					<li><a href="#">AWS Re:Inforce in 2019</a></li>
+				</ul>
+				<li><strong><a href="#fourth">Fourth Year</a></strong></li>
+				<ul>
+					<li><a href="#">COVID-19</a></li>
+					<li><a href="#">Remote work</a></li>
+					<li><a href="#">Burnt out...</a></li>
+					<li><a href="#">Family emergency</a></li>
+					<li><a href="#">Reorganization</a></li>
+					<li><a href="#">Layoff</a></li>
+				</ul>
+				<li><strong><a href="#summary">Summary</a></strong></li>
+				<li><strong><a href="#next">Next</a></strong></li>
+				<ul>
+					<li><a href="#">GAFA</a></li>
+					<li><a href="#">API Framework</a></li>
+					<li><a href="#">Golang</a></li>
+					<li><a href="#">Python</a></li>
+					<li><a href="#">Docker/Kubernetes</a></li>
+				</ul>
+			</ol>
+
+			<h2 id="landing-on-the-job">Landing on the job</h2>
+			<p>Landing on a new job is usually challenging in both good or bad ways. New work environments, new colleagues,
+				and new tools are all exciting and stressful as well. Particulary the finance industry, it is a regulated
+				industry and require a multiple onboarding step (Ex. A credit check and a rigorous work reference check.)</p>
+
+			<h4 id="call-from-td-recruiter">Call from TD recruiter</h4>
+			<p>I was working on DevOps projects as a configuration management engineer in another company in 2016, and one day
+				I got a direct email from a TD recruiter, and we talked about the opportunity available at TD to work on banking
+				API and cloud architecture. I was excited to hear that since I was just certified as AWS cloud architect at that
+				time, and I was seeking cloud architect jobs. It was just a best timing for me to take the opportunity, and I
+				agreed to proceed following job interviews. Another fascinating aspect of the opportunity was that the
+				employer is the one of big five banks in Canada, and it will certainly add some reputable experience on my
+				career, and I wanted to learn the FinTech industry as well.</p>
+
+			<h4 id="interviews">Interviews</h4>
+			<p>
+				The interviews were conducted by a phone call interview and multiple on-site. I had already seeing news from
+				LinkedIn feed regarding the FinTech boom, and I know what's happening, but my understanding is very superficial.
+				I did a little more research on why the FinTech gets so much attention. I didn’t prepare for typical coding
+				exercises, but instead review my work history and its projects and deepen my understanding of system
+				architectures. The actual technical interviews were not difficult. I was only asked a general software
+				development lifecycle and some system architecture related questions. I didn't forget to introduce my previous
+				work experiences with pain points of past projects and explained my approaches on how I fixed them.
+			</p>
+
+			<h4 id="offer">Offer</h4>
+			<p>
+				The decision is made right after my last round interview, and I was confident that I did well in the
+				interviews. I got notified the job offer next morning.
+			</p>
+
+			<h2>Onboarding to the team</h2>
+			<p>
+				TD is a typical Canadian banking corporation, and it requires financially credible person to join the
+				organization since they deal with people’s money. I was required to go through some backgroud checks with a
+				private agency which is responsible for my credit score and past employment history. It took a few weeks, and I
+				was feeling a little nervous during that period. I was finally notified my official start date, and I was ready,
+				set, and go to work.
+			</p>
+
+			<h4>On the job training</h4>
+			<p>
+				There was no formal orientation regarding my position on what to do in the line of business where I belong to
+				except some online training courses which I was required to take for general bank employees. Everything else is
+				a on-the-job training.
+			</p>
+			<h4>Getting to know other colleagues</h4>
+			<p>
+				My direct supervisor asked me if I want to be introduced to other colleagues via him, but I replied as I would
+				go explore people by myself. This is because of my strategy to make myself known from the work I will commit not
+				by a executive's general introduction, which is often forgettable by people. There was no formal orientation
+				regarding my position on what to do within the line of business where I belong to except some online training
+				courses which I was required to take for learning general bank employees common sense.
+			</p>
+
+			<h2>First Year</h2>
+			<p>
+				The first year was a mixtrue of trainings, some commitments from my skill set, and mentorship to juniors and
+				co-op students. It is a literally catch-up year to ongoing projects;I needed understand the team’s business
+				domain, areas to improve, strength, and their position in the line of business, Enterprise Architecture
+				department. I was also trying to understand the team’s own responsibilties and goals so that I can make a plan
+				on what commitments I can contribute to.
+			</p>
+
+			<p>
+				Most of my initial work was hands-on software development for supporting senior architects’ ongoing projects.
+				While doing these supportive tasks, I had been studying general enterprise API architectures and their patterns
+				with exploring unique enterprise requirements by interviewing and attending the weekly architecture review board
+				meetings.
+			</p>
+
+			<p>
+				My supervisor had been working on setting the vision of the enterprise API architecture at that time, and I was
+				initially helping him with my feedback on his PowerPoint deck regarding DevOps requirements.
+			</p>
+
+			<h4>Moving between offices - 100 Wellington West and 320 Front Street</h4>
+
+			<p>
+				The building I was working at did not accommodate the partnered engineering team who specializes in tooling API
+				frameworks, and I often had to walk to the building for meetings and some senior managers for architecture
+				planning.
+			</p>
+
+			<p>
+				<mark>There were two major proof of concept (PoC) projects executed during 2017;The fault-tolerant JVM
+					back-end API server and the QR code based mobile payment platform.</mark>
+			</p>
+
+			<h4>Fault-tolerant API PoC - Netflix Circuit Breaker Library</h4>
+			<p>
+				Resiliency and fault-tolerant were the major discussion topics which my supervisor and senior colleagues had
+				been discussing at for the enterprise API framework. There was a well-engineered Java written software
+				circuit-breaker available from Netflix's open source projects, and I utilized it to implement that feature into
+				the enterprise API framework. It actually worked quite well for the PoC purpose, and the software
+				circuit-breaker came with the dashboard feature which enables us to visually observe the incoming API requests
+				to the API framework and how the errorneous API requests are handled by the circuit-breaker as well.
+			</p>
+
+			<h4>United Way Pay PoC</h4>
+			<p>
+				TD has been supporting the United Way, a charity organization, and my department started a department-wide
+				charity campaign for them every year. My supervisor made a partnership with another enterprise payment team, and
+				we started building a mobile payment platform for collecting donations.
+			</p>
+
+			<p>
+				This mobile payment platform had some strategic requirements even though it is a proof of concept product. The
+				mobile payment platform utilize the current developing fault-tolerant, authentication, and authorization API
+				architecture.
+			</p>
+
+			<p>
+				My responsibility was software development of an embedded iOS library in Objective-C as a part of the entire web
+				API security framework for the iOS client application. The most iOS applications in the market were already
+				developed in Swift language at that time, but some encryption libraries of our proof of concept project
+				requires making access to iOS core functionalities, which were only available to Objective-C. There were not
+				helpful documents of how to utilize the libraries, and I had to extremely struggle with them.
+			</p>
+
+			<p>
+				The mobile payment platform is conneceted to production fund transfer API, and its backend system can move the
+				users' real money from their chequing account to the United Way campaign's designated bank account within the TD
+				bank network. The employees who registered on the mobile payment platform made payments as donations for the
+				United Way campaign.
+			</p>
+
+			<h4>Co-op students - Jay and Shah</h4>
+			<p>
+				There were two co-op students who joined in 2017. One is from the University of Waterloo who helped us to
+				execute our fault-tolerant API server project. The other one is from Ryerson University who also worked together
+				for the United Way campaign project. Both of them are very energized and held a strong curiosity for
+				technologies. They learned a lot and gained a substantial experience with the team, and both co-op students went
+				to work for another reputable companies as software engineer upon their graduation.
+			</p>
+
+			<h2 id="second">Second Year</h2>
+			<p>
+				The second year is the year for deepening my understanding of the unique enterprise requirements in the
+				enterprise API client authentication and authorization. One day in 2018, my supervisor gathered senior team
+				members and I, and we started a series of case-study based discussions and trainings on how to judge good and
+				bad enterprise API architectures. The team eventually finalized a general basic model template for building API
+				architecture in a solutions architecture blueprint.
+			</p>
+
+			<p>
+				While working on these discussions and trainings, I had started getting API architecture consulting works from
+				solutions architects. These consulting works are the best cases which I can apply the modeled template to
+				enforce the architecture standards. I was also assigned to join the weekly architecture review board meetings.
+				It is a meeting to review every solution architecture proposed in TD, and I gained an enormous amount of
+				knowledge from the meetings.
+			</p>
+
+			<h4>The virtual online banking platform - TD DaVinci</h4>
+			<p>
+				There were many hackathon events hosted in 2018 from small to large corporations. TD was also hosting internal
+				hackathon events for its junior employees. Our API architecture team was responsible for building the virtual
+				online banking platform which is simulating a production TD online banking website. The virtual online banking
+				platform has some strategic requirements to prove the developing API architectures. One of the requirements is
+				an integration with GitHub account and utilization of the associated user tokens to authenticate and authorize
+				the users' interaction with the virtual online banking platform. The choice of the GitHub is because it
+				implemented the OpenID Connect(OIDC) for its users' identity federation. This attempt is to experiment the
+				utilization of the GitHub as an OIDC enabled identity federation service since the bank also plans to move
+				to OIDC authorization services. Another requirement is to build a developer API portal with a collection of
+				APIs to enable developers to programmtically access to the virtual online banking platform. This is for the
+				future when open banking is available;where developers freely create financial client applications to expland
+				FinTech market.
+			</p>
+
+			<p>
+				<code>https://api.github.com/users/GITHUB_USER_NAME</code>
+			</p>
+
+			<h4>Hackathon - TD internal corporate hackathon</h4>
+			<p>
+				The internal corporate hackathon event went to 3 days in a row, and there were about 30 teams joined from the
+				all junior employees. They came up with a variety of financial applications developed based on our virtual
+				banking APIs. I was sitting with them and provided occasional supports for configuration and coding their
+				services.
+			</p>
+
+			<h4>Hackathon - Hack The North - Working in Pivotal (Acquired by VMWare) Toronto office</h4>
+			<p>
+				There is a biggest hackathon event in Canada called <em>Hack The North</em>. My team was registered to host the
+				same virtual online banking platform, and this is more professional environment so we decided to hire software
+				consulting company called Pivotal to help us polish our front-end look and feel. The Pivotal accommodated us to
+				work from their office, and I really enjoyed working there. On the day of the hackathon event, there are many
+				other hosts appeared with their booths; Google and RBC are just a few of them. We actually surpassed the other
+				bank competitor by the number of attendees' hackathon applications built on our platform. There was actually one
+				accident happened on the hackathon competition day. There was a small JavaScript code bug on the front-end
+				application and the virtual banking transaction data are misdisplayed. I quickly fixed the bug, tested on the
+				staging environment, and asked my supervisor if I can deploy the fix. My supervisor was a little reluctant to do
+				so because the production is already up and run, and many users are actively making access to it. I confirmed
+				with my supervisor that we can easily and quickly roll back the change if anything goes wrong. Then, we deployed
+				the fix to the production...It's all fixed right away!
+			</p>
+
+			<h4>Hackathon - Eleven</h4>
+			<p>
+				There was another hackathon event as well, and it was <a
+					href="https://www.hackworks.com/en/elevatehackathon">the Elevate Hackathon hosted at MARS by TD</a>, an
+				innovation centre to host startups or spin-offs from major internet service companies like Facebook and AirBnB
+				who has been developing innovative services.
+			</p>
+
+			<h4>TD Associates - Juniors</h4>
+			<p>
+				Three TD associates joined our team during their rotation program, which enables them to pick up four different
+				teams to work in TD every six months. One lady is very social and hold a strong leadership skill, one gentleman
+				is very strong in coding, and the last lady was on the focus of UI/UX design. They were all doing well, and they
+				eventually joined another reputable companies.
+			</p>
+
+			<h4>Vim Toronto meetup</h4>
+			<p>
+				One of the TD associates who used to work for the Ryerson DMZ, and she helped me to host a technology learning
+				meetup. The meetup is about learning vim, one of the software development tools based on the command line and
+				well know for a not easy to learn thing.
+			</p>
+
+			<h2 id="third">Third Year</h2>
+			<h4>Work environment change</h4>
+			<p>
+				The third-year was a special year because of a series of work environment changes. At first the virtual online
+				banking platform team was back from Pivotal office. Second, all juniors in the team left TD by their will.
+				Third, my supervisor who hired me left TD. Then, my team was merged into another team. I outlined the team
+				activities for the next supervisor, and I worked to support the relationships between the new supervisor and my
+				team. During the period of these changes, I kept receiving the API architecture consulting works more
+				and more, and I started becoming a trusted subject matter expert for many TD solutions architects. Though these
+				changes were stressful, I was able to spend more time on API architecture consulting works, one of
+				which is API client on-boarding for internal and external system integration with enterprise APIs.
+			</p>
+
+			<h4 id="api-client-onboarding">API Client Onboarding</h4>
+			<p>
+				The API client onboarding is a series of processes to enable an internal or external client software to access
+				to a server which hosts an enterprise financial system resources through the API which acts as an interface
+				between two systems for their integration. The criticalness of the integration exists at authentication and
+				authorization between the API clients and servers. Any enterprise system do not want to accept unauthorized
+				access by unauthenticated users. To avoid that, most companies have defined security frameworks. I was
+				particulary responsible for the OAuth2.0 grant types selections.
+			</p>
+
+			<h4>API Architecture Pattern</h4>
+			<p>
+				In parallel to my regular consulting work, I developed a new enterprise API architecture pattern called the
+				Adapter API pattern which is an API server implementation pattern for point to point data mapping integration
+				between two systems when they use different communication protocol for each other. One good example is a
+				conversion between SOAP XML payload and RESTful JSON payload. One system only uses SOAP XML format to transfer
+				data, and the other system only expects RESTful HTTPS JSON format as an input. The Adapter API server will be an
+				agent between them to enable their communications. The difficult part of this API architecture pattern is the
+				fact that there are many different types of existing systems who are already connected each other without
+				implementing the Adapter API pattern. The time and cost is an issue, and once this API architecture pattern is
+				enforced, then many existing solution designs need to be updated. This is overwelmed. The Adapter API pattern
+				needs a strategy on how to update the existing systems with the Adapter API pattern.
+			</p>
+
+			<h4>Architecture Review Board</h4>
+			<p>
+				In third year, I secured my chair in the architecture review board members for API architecture domain in the
+				following line of businesses:Wealth, Insrance, Securities, and Credit Card (WISC). Compared to typical core
+				banking domains like retail banking, WISC domains have more flexibilities in solutions design, and this
+				flexibility made me complicated to perform architecture scoring in the architecture review board meeting. The
+				WISC business requirements are moving quickly and changing dynamically by which architecture patterns sometimes
+				cannot be enforced.
+			</p>
+
+			<h4>Another patent filed for TD Insurance business solution</h4>
+			<p>
+				Beside my regular work, I had been working with another senior architect to design an IoT business solution. The
+				other senior architect is specialized for designing big data platform, and I am for API architecture of the
+				exposing parts of the big data solutions which is enabled by collecting data from smart homes equipped sensors.
+				We filed this solution architecture as a patent and successfully filed to be pending for granted.
+			</p>
+
+			<h4 id="api-client-onboarding-process-improve">Process improvement for the API client onboarding</h4>
+			<p>
+				<a href="#api-client-onboarding">The API Client Onboarding</a> is part of the entire new enterprise API creation
+				process or updating process when an API client updated in an exsiting solutions architecture. One of most
+				difficult requirement is the selection of OAuth2.0 grant types to secure API access. There are not too many
+				selections to pick up, and solutions architects never get into trouble by that, but instead the justification of
+				the choice is very difficult. By the order of the frequency to pick up the grant type, it is usually Client
+				Credentials grant type for most cases. Then, Authorization code grant type comes second. Rest of solution
+				designs are mostly falling into Resource Owner Password Credentials (ROPC) and Implicit grant types. These two
+				grant types have only very limited usages, and they are not major choice. It is probably not difficult to choose
+				either Client Credentials or Authorization code grant type, but the problem exists at their granular use cases.
+				Authorization code grant type is the best choice because it is most secured design grant type, but there is an
+				implementation cost for engineers. Client Credentials grant type is easier to implement and engineering cost is
+				low, but less secured compared to the Authorization code grant type. The difference between the Authorization
+				code and Client Credentials is the involvement of the end user to acknowledge the delegation of their identity
+				to the requested authorization service (Ex. Identity provider (IdP) like Auth0, Okta, and PingIdentity). The end
+				user is prompted to acknowledge if they agree to do so, and otherwise the authorization is voided. Client
+				Credentials skips that step, and no end user interaction is required. It sounds simple if no end user
+				interaction is required, but the problem is that we cannot assure that the API client is compromised since the
+				credentials stays permanent. For this reason, the Authorization code grant type is recommeded. The granular use
+				cases are following below as a list when Client Credentials is still the choice even though the Authorization
+				code grant type is better. The granular use cases list accompany with the choice of OAuth2.0 grant types. This
+				list saved so much time for solutions architects.
+
+			<ul>
+				<li>Legacy systems which cannot implement OAuth2.0 but SAML + JWT</li>
+				<li>End User + Client App + Client Credentials</li>
+				<li>Federation of the vendor user database</li>
+				<li>Middleware/back-end/BFF/microservice calls the enterprise API.</li>
+			</ul>
+
+			</p>
+
+
+			<h4>Google Cloud Hackathon at Montreal in 2019</h4>
+			<p>
+				One of my colleagues in TD who I wored together for the United Way campaign invited me to join the hackathon
+				event hosted by Google in Montreal. The hackathon is about development of the solutions utilizing Google Cloud
+				Platform. There are two requirements to be qualified for the competition;One is showing the target state of the
+				solution architecture, and the solution must utilize the provided data sets.
+			</p>
+
+			<h4>Google Cloud NeXT Event in 2019</h4>
+			<p>
+				There is an annual event hosted by Google Cloud team as NeXT'19 for the year in San Francisco, and one of my
+				colleagues invited me to the event. It was running one week long, and we stayed one of my friends house in
+				Campbell, California.
+			</p>
+			<h5>Visit Apple Campus in Cupertino, California</h5>
+			<p>
+				During my staying at Campbell, my frind who let myself and my colleague stay at his house took me to his
+				workplace, one of Apple campus and their headquarter at 1 Infinite Loop in Cupertino.
+			</p>
+
+			<h4>AWS Re:Inforce in 2019</h4>
+			<p>
+				AWS launched a new cloud computing conference to focus on its security technologies as the re:Inforce event in
+				2019. The first one was held at Boston, MA, and I went to there by myself with the purchase of over $1,000 CDN
+				expensive ticket, flight ticket, and AirBnB booking as well. There were dozens of live sessions, and I
+				deliberately choose API platform and its authentication and authorization technologies to see the next trends of
+				API platform security. It was an inagural event from AWS, and I expected many buzz words and non-technical
+				people gathering for recruiting engineers, but surprisingly the event was full of skilled engineers and I
+				learned a lot there.
+			</p>
+
+			<h4>COVID-19 pandemic started</h4>
+			<p>
+				Around November in 2019, there were news reporting the pandemic of the COVID-19 on TV, and it was a beginning of
+				the whole global pandemic. I didn't realize how hard and serious the pandemic is until the first lockdown of the
+				entire province of my residence.
+			</p>
+
+			<h2 id="fourth">Fourth Year</h2>
+			<p>
+				I entered my fourth year in 2020, and by the time I gained much experience by reviewing and helping hundreds of
+				solution architectures through architecture review board meetings and ad-hoc API architecture consulting works.
+				I sometimes redesigned the solution architectures to help the solutions architects to let them know how their
+				solutions can comply to the enterprise architecture standards.
+			</p>
+
+			<h5>Cloud Native Enterprise API Architecture</h5>
+			<p>
+				One of the major enterprise API architecture work is to develop and enhance the enterprise API frameworks in
+				multiple domains. A most basic enterprise API framework has general requirements to be secured by OAuth2 and
+				being enabled to be observable by enterprise logging tools and emitting metrics as streaming data. Since the
+				enterprise is getting adjusted to cloud native environment, the enterprise API framework is also required to
+				equip cloud native features. One of the features is to embed the Web API SDKs from the major cloud platform.
+				By embedding the cloud SDK/Web API library into the API framework, the framework can delegate some of its basic
+				functionalities to the cloud service providers. There is a risk to be dependent on the cloud service
+				provider/software as a service (SaaS) solutions. To mitigate the risk, the mutually agreed service level
+				agreement (SLA) is required before their integration. In general, the SLA is calculated by multiplication of the
+				series of the enterprise services integrated together as an SLA guaranteed service.
+			<figure class="plain">
+				<code class="go">
+            <pre>
+The actual SLA of the solution = Internet reliability (99.999%) *
+	service A (internal hosted app - 99.999%) *
+	service B (internal hosted third party COTS App - 99.99%) *
+	service C (external hosted SaaS - 99.99%) *
+	service D (in-house app deployed into a major cloud platform - 99.999%)
+	= 99.999% * 99.999% * 99.99% * 99.99% * 99.999%
+	= 99.977%
+            </pre>
+          </code>
+			</figure>
+			</p>
+
+			<h5>COVID-19</h5>
+			<p>
+				After an early few months had passed in 2020, and the COVID-19 issues getting global and worse with multiple
+				nation-wide lockdown orders from Canadian government.
+
+				I have to start something new which add a value to TD. The value will be an
+				asset in TD, and it will grow their businesses. I created a list below for the value-added activities.
+
+				Review the current TD API program to update with the latest technologies and new roadmaps.
+				Refine architectural questions to interview solution designers for API client onboarding for their system
+				integration projects and the architectural questions should reduce the amount of communication and backup more
+				time for Enterprise Architects to focus on new architecture development.
+
+				Develop a cloud native API architecture for existing enterprise API frameworks to utilize major public cloud
+				SDK and the public cloud SDK should replace the current API framework lock-in features with public cloud
+				services this will minimize the maintenance labour and cost for the API framework. The API framework developers
+				can spend more time for designing new API framework features. Develop a patentable API architecture for home
+				insurance domain
+				Obtain Azure Cloud Architect certificate
+			</p>
+
+			<h5>Remote work</h5>
+			<p>
+				Once the headquarter office decided to put all employees work from home except the essential service domains
+				like customer services for branch and retail banking.
+			</p>
+
+			<h5>Family emergency</h5>
+			<p>
+				During the period of the work-from-home style enforced, I had a family emergency which really disrupted my
+				business continuity.
+			</p>
+
+			<h5>Reorganization</h5>
+			<p>
+				Executives told us that they will keep the existing employees job security during 2020, but they will not for
+				2021. There were multiple rounds of layoffs from all over the line of businesses in the beginning of 2021. We
+				also got new chief architect for the enterprise architecture, and the lady was trying to lay down some new
+				foundations of architectural standards.
+			</p>
+
+			<h5>Burnt out...and layoff</h5>
+			<p>
+				The working from home was exciting at first few months until the school is shutdown and my kids started staying
+				at home all the time with online learning via computers. Please imagine that five-year-old girl watching the
+				computer screen all day long for learning something from the virtual teachers...It might work for some parts,
+				but I honestly don't agree this remote learning environment. This is because kids learning through their five
+				senses from all their body parts:Listening live voices, reading paper books with their hands, write down
+				something they want to express in white papers, and speak someone in front of their faces. Taking care of
+				kids and family while working on the computers at home is quite difficult. There are some people saying living
+				and working from home alone is also not easy, but for sure having a whole family at home is more tough. Dogs and
+				cats also need some cares, but kids as human beings are privileged to get more cares, and they can demand as
+				they want. It was just so much hard for me to continue working as I used to be under such a pressure to hold my
+				job. It eventually came to my turn to be laid off from the work, and some other teammates as well. What I found
+				was that my other teammates were the same family structure as I have. All of us have kids at home.
+			</p>
+
+			<h2>Summary</h2>
+			<p>
+				This is a short history of my last four years at TD. It is very personal and maybe not relevant to general
+				readers, but I hope my experiences and some technical aspects regarding software architect career can help
+				you decide to go this path. If so, we will cross in the road in the near future.
+			</p>
+
+			<h2>Next</h2>
+			<p>
+				I have some plans to continue to brush up my skill set, and I am looking for next opportunity to utilize them.
+				The followings are some of them.
+			</p>
+
+			<ul>
+				<li>API Architecture</li>
+				<li>API Framework</li>
+				<li>Golang</li>
+				<li>Docker/Kubernetes</li>
+			</ul>
+
+		</article>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="/static/javascripts/highlight.pack.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('figure code').each(function (i, e) {
+					hljs.highlightBlock(e)
+				});
+			});
+		</script>
+	</main>
+	<footer>
+		<div class="wrapper">
+			<div><span class="copyright">&copy;</span> Masashi Kobayashi 2021</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-23830196-1']);
+		_gaq.push(['_trackPageview']);
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Masashi Kobayashi">
+	<meta name="copyright" content="Copyright Masashi Kobayashi 2021">
+	<meta name="google-site-verification" content="cQSliJDuQ3qRlZyVLmjurqMe4x-Q_SxyvXtpQbWRbeY">
+	<title>Home - Masashi Kobayashi</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700|Fira+Sans:400,400i,700,700i,800"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/static/stylesheets/main.css">
+	<link rel="canonical" href="https://masashik.com" />
+
+</head>
+
+<body>
+	<header>
+		<nav class="wrapper clearfix">
+			<div class="breadcrumbs">
+				<a href="/">Masashi Kobayashi</a>
+			</div>
+			<div class="pages">
+				<a href="/blog/">Blog</a>
+				<!-- <a href="/#projects">Projects</a> -->
+				<a href="/#contact">Contact</a>
+			</div>
+		</nav>
+	</header>
+	<main class="wrapper clearfix">
+		<div class="primary">
+			<section class="splash clearfix">
+				<img src="/static/images/masashi.jpeg" alt="Masashi Kobayashi">
+				<article>
+					<p><strong>Hi, I'm Masashi Kobayashi. I'm a software developer and an enterprise architect specializing in API
+							Architecture. I live in the North York, Ontario, Canada.</strong></p>
+					<p>Previously I’ve worked for the Toronto-Dominion Bank Financial Group as an enterprise architect for
+						helping many banking API internal and external integration projects. I also used to host a meetup for vim (A
+						text editor for programmers) users in Toronto
+						<a href="https://github.com/masashik/vim-toronto">(Vim-Toronto)</a> and actively
+						involving
+						<a href='#standalone-sites' class='expandable'>developer communities</a> and continuing to work on those.
+					</p>
+					<div class='expandable' id='standalone-sites'>
+						<ul>
+							<li><a href="https://stackoverflow.com/users/1848559">StackOverFlow</a></li>
+							<li><a href="https://www.linkedin.com/in/masashik">LinkedIn</a></li>
+						</ul>
+					</div>
+					<p>I generally work with Java, JavaScript, Git and macOS and currently learning Go.
+						I also <a href="/blog/">write</a> about building web applications. You can take a look at my
+						open-source code on
+						<a href="https://github.com/masashik">Github</a>.
+					</p>
+				</article>
+			</section>
+			<section id="book" class="clearfix">
+				<article>
+					<h3>Resume</h3>
+					<p>This is my resume to list my professional career. </p>
+				</article>
+				<img src="/static/images/resume.png" alt="">
+			</section>
+			<section id="book" class="clearfix">
+				<article>
+					<h3>Awards</h3>
+					<p>I got an award at my previous employer. </p>
+				</article>
+				<img src="/static/images/2020-Patent-Achievement-Masashi.png" alt="">
+			</section>
+			<section id="book" class="clearfix">
+				<article>
+					<h3>Certificates</h3>
+					<p>I got a very basic one certificate in Azure. I used to have AWS solutions architect associate one as well,
+						but it's expired. </p>
+				</article>
+				<img src="/static/images/az-900-cert.png" alt="">
+			</section>
+			<section id="contact">
+				<article>
+					<h3>Contact</h3>
+					<p>If you’ve got any questions, suggestions or would like to discuss a project then email me at masashi at
+						makeanart dot com. I’d be happy to hear from you.</p>
+				</article>
+			</section>
+		</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('a.expandable').click(function (e) {
+					e.preventDefault();
+					source = $(this);
+					target = $(this).attr('href');
+					$(target).slideToggle('slow', function () {
+						source.blur();
+					});
+				});
+			});
+		</script>
+
+	</main>
+	<footer>
+		<div class="wrapper">
+			<div><span class="copyright">&copy;</span> Masashi Kobayashi 2021</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-23830196-1']);
+		_gaq.push(['_trackPageview']);
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+
+</html>
