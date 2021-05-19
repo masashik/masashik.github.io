@@ -42,17 +42,24 @@
 			</div>
 
 			<h2>Introduction</h2>
-			<p>This blog post is the summary of my 4 years career at TD and a short introduction of the banking industry,
-				fintech, and their relations.</p>
+			<p>On April 26th, 2021, I ended my employment at the Toronto-Dominion Bank Financial Group (TD). I took a
+				month to review what I achieved there and what skill set I can transfer for the next opportunity. The contents
+				of this blog post are collected from the review and is written in that month as the summary of my four years
+				career at TD and a short introduction of the current state of financial/banking industry, fintech ventures, and
+				their relations.</p>
 
 			<h2>Abstract</h2>
-			<p>I never imagined working in a bank as an software engineer since I graduated from school. FinTech companies are
-				trending in 2016 (Ex. Square, Stripe, Plaid, MoneyTree, LendingClub, WealthSimple, and etc...) and I wanted
-				to join the financial industry to understand what is happening with IT technologies. Job landing on a bank is a
-				new experience for me, and my first year is full of trainings and some PoC projects and providing mentorship to
-				my co-op students. My second year is a series of hackathon events. Third year is a special year since I got a
-				chance to visit some of Silicon Valley companies and, the COVID-19 pandemic started. My last year is full of
-				COVID-19 related issues and remote working.
+			<p>I never imagined working in a bank as an software engineer since I graduated from school. I have been choosing
+				technology companies, startups, or SaaS provider as my workplaces. FinTech ventures were often apprearing and
+				trending in news feeds in 2016 to name Square, Stripe, Plaid, Mint, MoneyTree, LendingClub, and WealthSimple as
+				examples. I was very curious about the FinTech because there are innovations happening even though financial
+				businesses are heavily regulated and not easy to innovative. I want to understand what is happening with IT
+				technologies for banks. Job landing on a bank is a new experience for me, and my first year is full of online
+				and on-the-job trainings and some PoC projects and mentoring co-op students in my team. The first half of my
+				second year was running and joining a series of hackathon events, and the other half was back to my typical
+				enterprise architecture work. Third year was a special year since I got a chance to visit some of Silicon Valley
+				technology companies like Google, Apple, and Facebook. It was also the year of the COVID-19 global pandemic
+				started. My last year was full of COVID-19 related things and remote working shift.
 			</p>
 
 			<h2>Table of contents</h2>
@@ -90,6 +97,8 @@
 				<ul>
 					<li><a href="#work-environment-change">Work environment change</a></li>
 					<li><a href="#api-client-onboarding">API Client Onboarding</a></li>
+					<li><a href="#hybrid">Hybrid Architecture of internal and external(third-party/vendor/SaaS) microservices</a>
+					</li>
 					<li><a href="#api-architecture-pattern">API Architecture Pattern</a></li>
 					<li><a href="#architecture-review-board">Architecture Review Board</a></li>
 					<li><a href="#patent-insurance">Another patent filed for TD Insurance business solution</a></li>
@@ -356,6 +365,13 @@
 				authorization between the API clients and servers. Any enterprise system do not want to accept unauthorized
 				access by unauthenticated users. To avoid that, most companies have defined security frameworks. I was
 				particulary responsible for the OAuth2.0 grant types selections.
+
+			<h5 id="hybrid">Hybrid Architecture of internal and external(third-party/vendor/SaaS) microservices - API Client
+				Onboarding</h5>
+			<p>
+				One solution architecture is presented. The front-end UI/UX is identical, but the back-end is composed by the
+				mixtrue of internal enterprise middleware by enterprise APIs and vendor SaaS APIs.
+			</p>
 			</p>
 
 			<h4 id="api-architecture-pattern">API Architecture Pattern</h4>
@@ -485,12 +501,12 @@
 				<code class="go">
             <pre>
 The actual SLA of the solution = Internet reliability (99.999%) *
-	service A (internal hosted app - 99.999%) *
-	service B (internal hosted third party COTS App - 99.99%) *
-	service C (external hosted SaaS - 99.99%) *
-	service D (in-house app deployed into a major cloud platform - 99.999%)
-	= 99.999% * 99.999% * 99.99% * 99.99% * 99.999%
-	= 99.977%
+  service A (internal hosted app - 99.999%) *
+  service B (internal hosted third party COTS App - 99.99%) *
+  service C (external hosted SaaS - 99.99%) *
+  service D (in-house app deployed into a major cloud platform - 99.999%)
+  = 99.999% * 99.999% * 99.99% * 99.99% * 99.999%
+  = 99.977%
             </pre>
           </code>
 			</figure>
